@@ -18,8 +18,8 @@ print(response)
 if response.status_code == 200:
     data = response.json()
 
-    # Структурированный вывод информации
-    for vacancy in data['items'][:6]:  # Выводим первые 5 вакансий
+    
+    for vacancy in data['items'][:6]:  # Выводим первые 6 вакансий
         print(f"ID: {vacancy['id']}")
         print(f"Название вакансии: {vacancy['name']}")
         print(f"Компания: {vacancy['employer']['name']}")
